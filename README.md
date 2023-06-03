@@ -4,4 +4,4 @@ The scraper has 3 versions: the 1st version handles the concurrency of the promi
 
 the second version handles the promises' concurrency for each scraped schedule instead of each channel. 
 
-the third works similarly to the second version, but uses a generator function to handle the concurrency.
+the third works similarly to the second version, but uses a generator function to handle the concurrency. (V3 is the best version so far)
