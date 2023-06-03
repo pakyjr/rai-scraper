@@ -9,7 +9,7 @@ export function getFormattedDates(numDays: number): string[] {
     let myDate: Date = new Date();
 
     for (let i = 0; i < numDays; i++) {
-        dates[i] = convertDataToString(myDate);
+        dates[i] = convertDateToString(myDate);
         myDate.setDate(myDate.getDate() + 1);
         // console.log(dates[i]);
     }
@@ -17,7 +17,7 @@ export function getFormattedDates(numDays: number): string[] {
     return dates
 }
 
-function convertDataToString(date: Date): string {
+function convertDateToString(date: Date): string {
     let day: number = date.getDate();
     let twoDigitDay: string = day.toString().padStart(2, '0');
     let month: number = date.getMonth() + 1;
